@@ -9,6 +9,9 @@
 
 int main(int argc, char *argv[])
 {
+    mkfifo("fifo/temperatures", 0666);
+    mkfifo("fifo/categories", 0666);
+    mkfifo("fifo/analytics", 0666);
     float L[5];
     for (int i = 0; i < 5; i++)
     {
